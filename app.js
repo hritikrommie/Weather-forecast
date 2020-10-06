@@ -16,14 +16,15 @@ function Send(city, callback) {
     request.open('GET', url + query, true);
     request.onload = function () {
         const data = JSON.parse(request.responseText);
+        console.log(data);
         const loc_key = data[0].Key;
-        console.log(loc_key);
-        callback(loc_key, city, populate);
+        const country = data[0].Country.LocalizedName;
+        callback(loc_key, city,country, populate);
     };
     request.send();
 }
 
-function Receive(loc_key,city,callback) {
+function Receive(loc_key,city,country,callback) {
     const forecast = `http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/${loc_key}`;
     const fetch_query = `?apikey=${key}`;
     const frcast = new XMLHttpRequest();
@@ -31,18 +32,17 @@ function Receive(loc_key,city,callback) {
     frcast.onload = function () {
         const jdata = JSON.parse(frcast.responseText);
         console.log(jdata);
-        callback(city,jdata);
+        callback(city,jdata,country);
     };
     frcast.send();
 }
 
-function populate(city,jdata) {
+function populate(city,jdata,country) {
     let tem = jdata[0].Temperature.Value;
     tem = Math.round((tem - 32) * (5 / 9));
     const timet = jdata[0].IsDaylight;
     const ic = jdata[0].WeatherIcon;
     document.querySelector('.icon').innerHTML=`<img src="icons/${ic}.png">`;
-    console.log(timet);
     if (timet) {
         document.querySelector('.card img').setAttribute('src', `https://source.unsplash.com/400x300/?${city},sunlight`);
     }
@@ -51,6 +51,6 @@ function populate(city,jdata) {
     }
     document.querySelector('.card').classList.add('show');
     document.querySelector('.temper').querySelector('span').innerText = tem;
-    document.querySelector('.card-details h4').innerText = city;
+    document.querySelector('.card-details h4').innerText = String(city)[0].toUpperCase()+String(city).substring(1)+", "+country;
     document.querySelector('.wt-cond span').innerText=jdata[0].IconPhrase;
 }
