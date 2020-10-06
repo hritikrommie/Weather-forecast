@@ -52,5 +52,5 @@ function populate(city,jdata) {
     document.querySelector('.card').classList.add('show');
     document.querySelector('.temper').querySelector('span').innerText = tem;
     document.querySelector('.card-details h4').innerText = city;
-
+    document.querySelector('.wt-cond span').innerText=jdata[0].IconPhrase;
 }
