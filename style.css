@@ -1,0 +1,66 @@
+*{
+    font-family: 'Courier New', Courier, monospace ;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(191, 160, 226);
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    background: rgb(196, 121, 219);
+    text-align: center;
+    height: 200px;
+    padding-top: 40px;
+}
+.header h2{
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+.form-control label{
+    display: block;
+    color: black;
+    font-size: 17px;;
+}
+.form-control input{
+    border: none;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    background: rgb(230, 234, 238);
+    border: 5px solid rgb(195, 92, 216);
+    border-radius: 8px;
+    font-size: 14px;
+}
+.card{
+    box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.28);
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    display: none;
+    max-width: 300px;
+}
+
+.card-details{
+    padding: 10px;
+    text-align: center;
+}
+.card-details h4{
+    padding: 5px 0;
+    font-size: 20px;
+}
+.wt-cond{
+    padding: 5px 0;
+    font-size: 16px;
+}
+.temper{
+    padding: 5px 0;
+    font-size: 25px;
+}
+.show{
+    display: block;
+}
