@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background: rgb(191, 160, 226);
+    background: rgb(213, 196, 233);
 }
 .container{
     width: 100%;
@@ -42,7 +42,6 @@ body{
     margin-top: 100px;
     border-radius: 10px;
     display: none;
-    max-width: 300px;
 }
 
 .card-details{
