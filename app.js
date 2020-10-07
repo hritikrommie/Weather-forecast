@@ -10,7 +10,7 @@ form.addEventListener('submit', function (e) {
 });
 
 function Send(city, callback) {
-    const url = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    const url = 'https://dataservice.accuweather.com/locations/v1/cities/search';
     const query = `?apikey=${key}&q=${city}`;
     const request = new XMLHttpRequest();
     request.open('GET', url + query, true);
@@ -25,7 +25,7 @@ function Send(city, callback) {
 }
 
 function Receive(loc_key,city,country,callback) {
-    const forecast = `http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/${loc_key}`;
+    const forecast = `https://dataservice.accuweather.com/forecasts/v1/hourly/1hour/${loc_key}`;
     const fetch_query = `?apikey=${key}`;
     const frcast = new XMLHttpRequest();
     frcast.open('GET', forecast + fetch_query, true);
