@@ -4,21 +4,22 @@
     padding: 0;
 }
 body{
-    background: rgb(191, 160, 226);
+    background: rgb(209, 191, 230);
 }
 .container{
     width: 100%;
     margin: 0 auto;
 }
 .header{
-    background: rgb(196, 121, 219);
+    background: rgb(202, 124, 226);
     text-align: center;
-    height: 200px;
-    padding-top: 40px;
+    height: 110px;
+    padding-top: 20px;
+    
 }
 .header h2{
     font-size: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 .form-control label{
     display: block;
@@ -28,18 +29,20 @@ body{
 .form-control input{
     border: none;
     width: 250px;
-    height: 30px;
+    height: 40px;
     padding: 5px;
     background: rgb(230, 234, 238);
     border: 5px solid rgb(195, 92, 216);
-    border-radius: 8px;
+    border-radius: 4px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     font-size: 14px;
 }
 .card{
     box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.28);
     width: 400px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 10px;
     display: none;
     max-width: 400px;
