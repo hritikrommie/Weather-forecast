@@ -1,80 +1,90 @@
-*{
-    font-family: 'Courier New', Courier, monospace ;
-    margin: 0;
-    padding: 0;
+html {
+    font-size: 150%;
+    color: #000000;
+    box-sizing: border-box;
+    background-color: #fffff0;
+    margin: 2%;
 }
-body{
-    background: rgb(213, 196, 233);
+head {
+    display: inline;
+    float: left;
+    background-color: #ffffff;
 }
-.container{
-    width: 100%;
-    margin: 0 auto;
-}
-.header{
-    background: rgb(180, 86, 209);
-    text-align: center;
-    height: 200px;
-    padding-top: 40px;
-    box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.28);
-}
-.header h2{
-    font-size: 50px;
-    margin-bottom: 35px;
-}
-.form-control label{
+body {
+    background-color: #fffff0;
+    box-sizing: border-box;
     display: block;
-    color: black;
-    font-size: 17px;;
-}
-.form-control input{
-    border: none;
-    width: 250px;
-    height: 30px;
-    padding: 5px;
-    background: rgb(230, 234, 238);
-    border: 5px solid rgb(195, 92, 216);
-    border-radius: 8px;
-    font-size: 14px;
-}
-.card{
-    box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.28);
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 100px;
-    border-radius: 10px;
-    display: none;
-}
 
-.card-details{
-    padding: 10px;
+}
+.container {
+    background-color: #fffff0;
+
+}
+.header {
+    background-color: #fffff0;
+}
+.header h2 {
     text-align: center;
+    color: #0000ff;
+    font-size: 200%;
+    margin-top: 0%;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px #ff00ff;
 }
-.card-details h4{
-    padding: 5px 0;
-    font-size: 20px;
-}
-.wt-cond{
-    padding: 5px 0;
-    font-size: 16px;
+.header form {
+    background-color: #ffff00;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0%;
+    box-sizing: border-box;
+    padding: 1%;
+   }
+
+   .card {
+    background-color: #fffff0;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-right: 45%;
+     box-shadow: 0% 0% 5% 2% #000000;
+     width: 250px;
+     height: 150px;
+     border-style: solid;
+     border-radius: 10px;
+     border-color: #ffff00;
+     
+   }
+
+   .card-details {
+    background-color: #fffff0;
+    border-style: solid;
+    border-color: #ffff00;
+    border-radius: 10px;
+
+   }
+    .card-details h4 {
+        background-color: #fffff0;
+    }
+    .wt-cond{
+    padding: 1%;
+    font-size: 100%;
 }
 .temper{
-    padding: 5px 0;
-    font-size: 25px;
+    padding: 1%;
+    font-size: 75%;
 }
 .show{
     display: block;
 }
-footer{
-    position: fixed;
-    bottom: 0;
-    height: 30px;
-    background: rgb(180, 86, 209);
-    width: 100%;
+
+   .foot
+   {
+    background-color: #ffff00;
     text-align: center;
-    box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.28);
-}
-footer span{
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     bottom: 0;
-    font-size: 15px;
-}
+    margin-top: 25%;
+
+
+   }

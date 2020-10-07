@@ -44,10 +44,10 @@ function populate(city,jdata,country) {
     const ic = jdata[0].WeatherIcon;
     document.querySelector('.icon').innerHTML=`<img src="icons/${ic}.png">`;
     if (timet) {
-        document.querySelector('.card img').setAttribute('src', `https://source.unsplash.com/400x300/?${city},sunlight`);
+        document.querySelector('.card img').setAttribute('src', `https://source.unsplash.com/400x200/?${city},sunlight`);
     }
     else {
-        document.querySelector('.card img').setAttribute('src', `https://source.unsplash.com/400x300/?${city},night`);
+        document.querySelector('.card img').setAttribute('src', `https://source.unsplash.com/400x200/?${city},night`);
     }
     document.querySelector('.card').classList.add('show');
     document.querySelector('.temper').querySelector('span').innerText = tem;
