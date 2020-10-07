@@ -1,5 +1,5 @@
 
-const key = 'lJv1VKjEIAG5uHkz68hsktmQeP0i5Abx';
+const key = 'UaP2ou06sEWBbP49ECYbTP5oGBQy6Xfg';
 const form = document.querySelector('.form-control');
 
 form.addEventListener('submit', function (e) {
