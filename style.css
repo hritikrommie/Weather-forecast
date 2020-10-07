@@ -1,9 +1,13 @@
+* {
+
+}
 html {
     font-size: 150%;
     color: #000000;
     box-sizing: border-box;
     background-color: #fffff0;
     margin: 2%;
+
 }
 head {
     display: inline;
@@ -13,7 +17,11 @@ head {
 body {
     background-color: #fffff0;
     box-sizing: border-box;
+    border-left: 1px  solid #000000;
+    border-bottom:1px   solid #000000;
+    border-top: 1px dotted #000000;
     display: block;
+     box-shadow: 2px 2px 2px #fffff0,2px 2px 2px #ffff00,2px 2px 2px #000000;
 
 }
 .container {
@@ -32,12 +40,14 @@ body {
     text-shadow: 3px 3px 2px #ff00ff;
 }
 .header form {
-    background-color: #ffff00;
+    background-color: #ffffff;
     text-decoration: none;
     text-align: center;
     margin-top: 0%;
     box-sizing: border-box;
     padding: 1%;
+    border-radius: 10px;
+     box-shadow: 5px 5px 8px #fffff0,5px 5px 8px #ffff00,5px 5px 8px #000000;
    }
 
    .card {
@@ -46,20 +56,21 @@ body {
     margin-top: 2%;
     margin-left: 40%;
     margin-right: 45%;
-     box-shadow: 0% 0% 5% 2% #000000;
+    box-shadow: 2px 2px 2px #fffff0,2px 2px 2px #ffff00,2px 2px 2px #000000;
      width: 250px;
      height: 150px;
      border-style: solid;
      border-radius: 10px;
-     border-color: #ffff00;
+     border-color: #fffff0;
      
    }
 
    .card-details {
     background-color: #fffff0;
     border-style: solid;
-    border-color: #ffff00;
+    border-color: #fffff0;
     border-radius: 10px;
+   box-shadow: 2px 2px 2px #fffff0,2px 2px 2px #ffff00,2px 2px 2px #000000;
 
    }
     .card-details h4 {
@@ -79,12 +90,14 @@ body {
 
    .foot
    {
-    background-color: #ffff00;
+    background-color: #ffffff;
     text-align: center;
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     margin-top: 25%;
+     box-shadow: 5px 5px 8px #fffff0,5px 5px 8px #ffff00,5px 5px 8px #000000;
+     border-radius: 10px;
 
 
    }
