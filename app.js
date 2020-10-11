@@ -5,6 +5,8 @@ const form = document.querySelector('.form-control');
 form.addEventListener('submit', function (e) {
     e.preventDefault();
     const city = form.city.value.trim();
+    localStorage.setItem('city',city);
+    //console.log(localStorage.getItem('city'));
     Send(city, Receive);
     form.reset();
 });
@@ -54,4 +56,7 @@ function populate(city,jdata,country) {
     document.querySelector('.temper').querySelector('span').innerText = tem;
     document.querySelector('.card-details h4').innerText = String(city)[0].toUpperCase()+String(city).substring(1)+", "+country;
     document.querySelector('.wt-cond span').innerText=jdata[0].IconPhrase;
+}
+if(localStorage.getItem('city')){
+    Send(localStorage.getItem('city'), Receive);
 }
